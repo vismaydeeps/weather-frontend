@@ -10,7 +10,7 @@ function App() {
     if (!query.trim()) return;
     setLoading(true);
     try {
-      const res = await fetch('http://127.0.0.1:5000/query', {
+      const res = await fetch('https://weather-agent-backend.onrender.com/query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
